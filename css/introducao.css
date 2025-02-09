@@ -15,6 +15,18 @@
     position: relative;
 }
 
+.introducao h1::before {
+    content: '';
+    display: block;
+    background: url(../img/detalhe.svg) no-repeat center;
+    width: 130px;
+    height: 100px;
+    position: absolute;
+    z-index: -1;
+    top: -20px;
+    left: -40px;
+}
+
 
 .introducao p {
     font-size: 1.5rem;
@@ -47,6 +59,10 @@
     .introducao h1 {
         font-size: 3rem;
         text-align: center;
+    }
+
+    .introducao h1::before {
+        display: none;
     }
 
     .introducao p {
